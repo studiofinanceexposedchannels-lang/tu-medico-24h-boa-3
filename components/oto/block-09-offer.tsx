@@ -28,27 +28,18 @@ export function Block09Offer() {
 
           <div className="relative p-6 sm:p-8">
             <div className="space-y-1.5 text-center text-sm text-muted-foreground">
-              <p>
-                Valor de los bonos:{' '}
-                <span className="font-semibold text-foreground line-through">$102</span>
-              </p>
-              <p>
-                Valor del protocolo + bonos:{' '}
-                <span className="font-semibold text-foreground line-through">$163</span>
-              </p>
-              <p>
-                Precio normal:{' '}
-                <span className="font-semibold text-foreground line-through">$61</span>
-              </p>
+              <p>Valor total estimado · <span className="font-semibold text-foreground line-through">US$1.497</span></p>
+              <p>Precio normal · <span className="font-semibold text-foreground line-through">US$997</span></p>
+              <p>Precio de incorporación · <span className="font-semibold text-foreground line-through">US$697</span></p>
             </div>
 
             <div className="mt-6 flex flex-col items-center rounded-2xl border border-primary/25 bg-primary/5 px-4 py-5 text-center">
               <p className="max-w-[15rem] text-xs font-semibold uppercase leading-snug tracking-[0.16em] text-primary sm:text-sm">
-                Hoy, como complemento de tu compra
+                Hoy después de tu compra
               </p>
               <div className="mt-1 flex items-end gap-2">
                 <span className="font-display text-7xl font-extrabold leading-none text-primary drop-shadow-[0_4px_24px_color-mix(in_oklch,var(--primary)_50%,transparent)]">
-                  $17
+                  US$97
                 </span>
               </div>
             </div>
@@ -71,7 +62,7 @@ export function Block09Offer() {
             </p>
 
             <div className="mt-8">
-              <CtaButton size="default" className="px-4 py-3 text-[13px] leading-tight sm:px-6 sm:py-5 sm:text-lg"><span className="max-w-[15rem] text-balance">Sí, quiero añadir el Protocolo por $17</span></CtaButton>
+              <CtaButton size="default" className="px-4 py-3 text-[13px] leading-tight sm:px-6 sm:py-5 sm:text-lg"><span className="max-w-[15rem] text-balance">Quiero mi Médico Virtual de por vida — US$97</span></CtaButton>
             </div>
           </div>
         </div>
