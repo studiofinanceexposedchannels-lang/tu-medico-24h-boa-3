@@ -32,7 +32,7 @@ export function Block06Bonus() {
                   <b.icon className="size-5" />
                 </span>
                 <p className="font-display text-[11px] font-bold uppercase tracking-[0.16em] text-primary">
-                  🎁 {b.n}
+                  {b.n}
                 </p>
                 <span className="ml-auto shrink-0 rounded-full bg-secondary px-2.5 py-1 font-display text-[11px] font-bold text-muted-foreground">
                   Valor: <span className="line-through">{b.value}</span>

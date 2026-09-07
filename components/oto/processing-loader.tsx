@@ -54,8 +54,8 @@ export function ProcessingLoader({
 
   if (isPaso2) {
     return (
-      <div className={cn('tone-ember fixed inset-0 z-50 flex items-center justify-center overflow-hidden bg-background px-2 py-3 text-foreground transition-opacity duration-500', closing && 'pointer-events-none opacity-0')} role="status" aria-live="polite">
-        <div className="flex h-full max-h-[533px] w-full max-w-[300px] flex-col justify-between">
+      <div className={cn('tone-ember fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-background px-2 py-3 text-foreground transition-opacity duration-500', closing && 'pointer-events-none opacity-0')} role="status" aria-live="polite">
+        <div className="flex min-h-full w-full max-w-[300px] flex-col justify-between pb-16">
           <div className="flex items-center justify-center rounded-full border border-primary/50 bg-primary/10 px-2 py-1 text-center font-display text-[8px] font-bold uppercase tracking-wide text-primary">
             <AlertTriangle className="mr-1 size-2.5 animate-blink" /> Paso 2 de 3: ¡No cierres esta página!
           </div>
@@ -79,6 +79,7 @@ export function ProcessingLoader({
             </div>
           </div>
           <div className="mt-2 h-1 overflow-hidden rounded-full bg-foreground/15"><div className="h-full rounded-full bg-primary transition-[width] duration-300" style={{ width: `${Math.min(progress, 100)}%` }} /></div>
+          <div className="h-16 shrink-0 bg-background" aria-hidden="true" />
         </div>
       </div>
     )
