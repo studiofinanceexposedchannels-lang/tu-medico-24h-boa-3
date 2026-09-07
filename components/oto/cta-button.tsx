@@ -28,8 +28,7 @@ export function CtaButton({
     if (scrollTo) {
       const target = document.getElementById(scrollTo)
       if (target) {
-        const targetTop = target.getBoundingClientRect().top + window.scrollY - 12
-        window.scrollTo({ top: Math.max(targetTop, 0), behavior: 'smooth' })
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' })
         window.history.replaceState(null, '', `#${scrollTo}`)
       } else {
         window.location.hash = scrollTo
