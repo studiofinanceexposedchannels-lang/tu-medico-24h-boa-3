@@ -54,40 +54,31 @@ export function ProcessingLoader({
 
   if (isPaso2) {
     return (
-      <div className={cn('tone-ember fixed inset-0 z-50 flex justify-center overflow-y-auto bg-foreground px-2 py-4 text-background transition-opacity duration-500', closing && 'pointer-events-none opacity-0')} role="status" aria-live="polite">
-        <div className="h-fit w-full max-w-[300px]">
-          <div className="flex items-center justify-center rounded-full border border-red-600/50 bg-red-600/10 px-2 py-1.5 text-center font-display text-[8px] font-bold uppercase tracking-wide text-red-600">
+      <div className={cn('tone-ember fixed inset-0 z-50 flex items-center justify-center overflow-hidden bg-foreground px-2 py-3 text-background transition-opacity duration-500', closing && 'pointer-events-none opacity-0')} role="status" aria-live="polite">
+        <div className="flex h-full max-h-[533px] w-full max-w-[300px] flex-col justify-between">
+          <div className="flex items-center justify-center rounded-full border border-primary/50 bg-primary/10 px-2 py-1 text-center font-display text-[8px] font-bold uppercase tracking-wide text-primary">
             <AlertTriangle className="mr-1 size-2.5 animate-blink" /> Paso 2 de 3: ¡No cierres esta página!
           </div>
-          <div className="mt-5 text-center">
-            <span className="inline-flex items-center gap-1 rounded-full border border-background/20 px-3 py-1 font-display text-[8px] font-bold uppercase tracking-[0.18em] text-background/70"><Flame className="size-2.5 text-red-600" /> Atención</span>
-            <h1 className="mt-3 text-balance font-display text-[1.45rem] font-extrabold uppercase leading-[0.98] tracking-tight">
-              Tu pedido del <span className="text-red-600">Método de La Dieta Japonesa</span> está casi completo…
+          <div className="mt-2 text-center">
+            <span className="inline-flex items-center gap-1 rounded-full border border-background/20 px-2 py-0.5 font-display text-[8px] font-bold uppercase tracking-[0.18em] text-background/70"><Flame className="size-2.5 text-primary" /> Atención</span>
+            <h1 className="mt-1.5 text-balance font-display text-[1.24rem] font-extrabold uppercase leading-[0.98] tracking-tight">
+              Tu pedido del <span className="text-primary">Método de La Dieta Japonesa</span> está casi completo…
             </h1>
-            <p className="mt-3 text-[11px] leading-relaxed text-background/70">⚠️ Pero hay algo <strong className="text-background">muy importante</strong> que todavía necesitas saber.</p>
+            <p className="mt-1.5 text-[10px] leading-tight text-background/70">Pero hay algo <strong className="text-background">muy importante</strong> que todavía necesitas saber.</p>
           </div>
-          <img
-            src="/images/paso2-banner.png"
-            alt="Persona mayor cayendo por pérdida de equilibrio"
-            className="mt-4 w-full rounded-xl object-cover"
-          />
-          <div className="mt-5 space-y-3 text-[10px] leading-[1.5] text-background/80">
-            <p>Hasta ahora ya has dado dos pasos muy importantes:</p>
-            <div className="flex flex-col gap-2 rounded-xl border border-background/10 bg-background/5 p-3 text-background/90">
-              <p>Trabajar tu equilibrio, movilidad y seguridad al caminar.</p>
-              <p>Organizar tu alimentación, hábitos y rutina de autocuidado.</p>
-            </div>
-            <p className="font-display font-bold uppercase text-background">Pero hay una pregunta que ninguno de esos materiales puede responder por sí solo...</p>
-            <p className="font-display font-bold uppercase text-red-600">¿Quién estará a tu lado cuando estés en casa y te surja una duda urgente sobre tu neuropatía?</p>
-            <p>Porque es muy diferente tener un protocolo guardado en el teléfono... que contar con una herramienta de última generación, disponible 24 horas al día, que analiza tu duda y te ofrece una orientación adaptada a la situación que estás viviendo en ese momento.</p>
-            <div className="flex flex-col gap-2 rounded-xl border border-red-600/20 bg-red-600/10 p-3 text-background/90">
-              <p>“¿Cómo puedo saber si una herida se está infectando?”</p>
-              <p>“¿Cómo sé si mi neuropatía está empeorando?”</p>
-              <p>“¿Qué debo hacer si aparece una ampolla en mi pie?”</p>
-              <p>“¿Debería consultar a un médico de verdad por lo que estoy sintiendo?”</p>
+          <img src="/images/paso2-banner.png" alt="Persona mayor cayendo por pérdida de equilibrio" className="mt-2 h-[68px] w-full rounded-lg object-cover" />
+          <div className="mt-2 flex flex-col gap-1.5 text-[9px] leading-[1.25] text-background/80">
+            <p>Hasta ahora ya has dado dos pasos importantes: <strong className="text-background">equilibrio y movilidad</strong>, y <strong className="text-background">alimentación y autocuidado</strong>.</p>
+            <p className="font-display font-bold uppercase text-background">Pero hay una pregunta que esos materiales no pueden responder por sí solos:</p>
+            <p className="rounded-lg border border-primary/30 bg-primary/10 p-2 font-display text-[10px] font-bold uppercase leading-tight text-primary">¿Quién estará a tu lado cuando te surja una duda urgente sobre tu neuropatía?</p>
+            <div className="grid grid-cols-2 gap-1.5 rounded-lg border border-primary/20 bg-primary/10 p-2 text-background/90">
+              <p>“¿Cómo sé si una herida se está infectando?”</p>
+              <p>“¿Mi neuropatía está empeorando?”</p>
+              <p>“¿Qué hago si aparece una ampolla?”</p>
+              <p>“¿Cuándo debo consultar a un médico?”</p>
             </div>
           </div>
-          <div className="mt-4 h-1 overflow-hidden rounded-full bg-background/15"><div className="h-full rounded-full bg-red-600 transition-[width] duration-300" style={{ width: `${Math.min(progress, 100)}%` }} /></div>
+          <div className="mt-2 h-1 overflow-hidden rounded-full bg-background/15"><div className="h-full rounded-full bg-primary transition-[width] duration-300" style={{ width: `${Math.min(progress, 100)}%` }} /></div>
         </div>
       </div>
     )

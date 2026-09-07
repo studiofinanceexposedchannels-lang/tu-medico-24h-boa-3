@@ -62,7 +62,7 @@ export function Block09Offer() {
             </p>
 
             <div className="mt-8">
-              <CtaButton size="default" className="px-4 py-3 text-[13px] leading-tight sm:px-6 sm:py-5 sm:text-lg"><span className="max-w-[15rem] text-balance">Quiero mi Médico Virtual de por vida — US$97</span></CtaButton>
+              <CtaButton scrollTo="oferta" size="default" className="px-4 py-3 text-[13px] leading-tight sm:px-6 sm:py-5 sm:text-lg"><span className="max-w-[15rem] text-balance">Quiero mi Médico Virtual de por vida — US$97</span></CtaButton>
             </div>
           </div>
         </div>

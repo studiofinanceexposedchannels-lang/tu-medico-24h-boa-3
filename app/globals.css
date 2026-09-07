@@ -93,9 +93,20 @@
 
 /* Intro steps (Paso 1 & Paso 2) keep the warm terracotta/ember accent */
 .tone-ember {
-  --primary: oklch(0.63 0.21 38);
-  --primary-foreground: oklch(0.99 0.01 60);
-  --ring: oklch(0.63 0.21 38);
+  --background: #ebe2d9;
+  --foreground: #174d38;
+  --card: #f8f3ee;
+  --card-foreground: #174d38;
+  --primary: #e5ab7e;
+  --primary-foreground: #174d38;
+  --secondary: #779e39;
+  --secondary-foreground: #f8f3ee;
+  --muted: #ded2c5;
+  --muted-foreground: #496052;
+  --accent: #779e39;
+  --accent-foreground: #f8f3ee;
+  --border: color-mix(in srgb, #174d38 18%, transparent);
+  --ring: #e5ab7e;
 }
 
 .dark {

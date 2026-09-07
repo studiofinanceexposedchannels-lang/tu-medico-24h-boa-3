@@ -1,6 +1,6 @@
 'use client'
 
-import { Gift, ListChecks, ShieldAlert, Dumbbell } from 'lucide-react'
+import { ListChecks, ShieldAlert, Dumbbell } from 'lucide-react'
 import { Reveal } from './reveal'
 import { Section, Kicker, Heading } from './shared'
 
@@ -18,10 +18,9 @@ export function Block06Bonus() {
     <Section tone="muted">
       <Reveal className="text-center">
         <Kicker>
-          <Gift className="size-4" />
           Bonos exclusivos
         </Kicker>
-        <Heading className="mt-6">🎁 Y además recibirás estos bonos exclusivos</Heading>
+        <Heading className="mt-6">Y además recibirás estos bonos exclusivos</Heading>
       </Reveal>
 
       <div className="mt-8 space-y-4">

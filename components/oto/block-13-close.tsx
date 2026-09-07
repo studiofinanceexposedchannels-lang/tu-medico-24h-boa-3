@@ -98,8 +98,8 @@ export function Block13Close() {
           <div className="mx-auto mt-8 flex items-center justify-center gap-2 text-background/60">
             <ArrowDown className="size-5 animate-bounce" />
           </div>
-          <div className="mt-4">
-            <CtaButton size="default" subtle className="px-4 py-3 text-[13px] leading-tight sm:px-6 sm:py-5 sm:text-lg"><span className="max-w-[15rem] text-balance">Sí, quiero añadir el Protocolo por $17</span></CtaButton>
+          <div className="mt-8">
+            <CtaButton scrollTo="oferta" size="default" subtle className="px-4 py-3 text-[13px] leading-tight sm:px-6 sm:py-5 sm:text-lg"><span className="max-w-[15rem] text-balance">Sí, quiero añadir el Protocolo por $17</span></CtaButton>
           </div>
           <p className="mt-4 text-xs text-background/50">
             Pago único · Garantía de 7 días · Acceso inmediato
@@ -131,7 +131,7 @@ export function Block13Close() {
           <p className="text-pretty font-display text-lg font-extrabold uppercase tracking-tight text-primary sm:text-xl">
             Sí, quiero el Protocolo de la Gimnasta de 5 Días por $17
           </p>
-          <div className="mt-6">
+          <div className="mt-9">
             <CtaButton size="default" className="px-4 py-3 text-[13px] leading-tight sm:px-6 sm:py-5 sm:text-lg">
               <span className="max-w-[15rem] text-balance">Añadir a mi pedido ahora</span>
             </CtaButton>
