@@ -26,7 +26,14 @@ export function CtaButton({
 }: CtaButtonProps) {
   function handleClick() {
     if (scrollTo) {
-      document.getElementById(scrollTo)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      const target = document.getElementById(scrollTo)
+      if (target) {
+        const targetTop = target.getBoundingClientRect().top + window.scrollY - 12
+        window.scrollTo({ top: Math.max(targetTop, 0), behavior: 'smooth' })
+        window.history.replaceState(null, '', `#${scrollTo}`)
+      } else {
+        window.location.hash = scrollTo
+      }
       return
     }
     // Open checkout in a new tab when embedded in an iframe (e.g. preview), else navigate.
